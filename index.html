@@ -2,32 +2,41 @@
 <html>
 
   <style> 
-        body{
-  background-color: yellowgreen;
+        html{
+background: rgb(2,0,36);
+background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(142,45,226,1) 0%, rgba(74,0,224,1) 100%);
+background-attachment:fixed;
+height:100%;
 }
 .no-shadows {
     box-shadow: none!important;
 }
 .container{
   margin-top: 2rem;
+margin-left: 50%;
+
 }
 .tabs .tab a:hover, .tabs .tab a.active {
-    color: #9acd32 !important;
+    color: #4a00e0 !important;
+	margin-left: 50%;
 }
 
 .tabs .indicator {
-    background-color: #9acd32 !important;
+    background-color: #4a00e0 !important;
 }
 .tabs .tab a {
         color: rgba(0,0,0,0.87) !important;
         font-weight: 500;
+		margin-left: 50%;
 }
 .tabs .tab a:focus, .tabs .tab a:focus.active {
-    background-color: rgb(154, 205, 50);
+    background-color: #4a00e0;
     outline: none;
+	margin-left: 50%;
 }
 .tabs .tab a:focus, .tabs .tab a:focus.active {
     background-color: rgba(154, 205, 50, 0.4) !important;
+	margin-left: 50%;
 }
 
     </style>
@@ -36,8 +45,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <title>My wallet 🚀</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.5, maximum-scale=1.5, user-scalable=no"/>
+    <title>My wallets 🚀</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
   </head>
   <body>
@@ -46,14 +55,13 @@
 
       <div class="row">
 
-        <div class="col l6 offset-l3 z-depth-4 s12 m12 white">
+        <div class="col l6 offset-l3 z-depth-3 s12 m12 white">
           <h4>Wallet for donate.</h4>
           <hr>
           <ul id="tabs-swipe-demo" class="tabs">
             <li class="tab col s3"><a href="#btc">Bitcoin</a></li>
             <li class="tab col s3"><a href="#eth">Etherium</a></li>
-            <li class="tab col s3"><a href="#neo">Neo</a></li>
-            <li class="tab col s3"><a href="#stx">Stellar</a></li>
+            <li class="tab col s3"><a href="#neo">USDT TetherUS</a></li>
           </ul>
 
           <div id="btc" class="col s12">
@@ -62,7 +70,7 @@
                 <div class="card no-shadows">
                   <div class="card-content">
                     <span class="card-title">Bitcoin wallet adress</span>
-                    <p>13wmJNBwGEg6q8o8XU5rDDd2b82yJtrhSg</p>
+                    <p>1HumrznFD1pxYWUHP3jk4g4FhDFEszRgY2</p>
                   </div>
                   <div class="card-action">
                     <img src="https://wallet.erdem.in/btc.png" alt="">
@@ -78,7 +86,7 @@
                 <div class="card no-shadows">
                   <div class="card-content">
                     <span class="card-title">Etherium wallet adress</span>
-                    <p>0xd1CC244CdBF43610C078D4219216c5653d013fa4</p>
+                    <p>0x74b930fc290fce14a1b1689bbc1887db039b4206</p>
                   </div>
                   <div class="card-action">
                     <img src="https://wallet.erdem.in/eth.png" alt="">
@@ -93,8 +101,8 @@
               <div class="col s12 m12">
                 <div class="card no-shadows">
                   <div class="card-content">
-                    <span class="card-title">Neo wallet adress</span>
-                    <p>AbVczU8foFA5v4q7AvCwbYM6acHXg1Kuo</p>
+                    <span class="card-title">USDT TetherUS wallet adress</span>
+                    <p>TYWYUSe6dZ9JD4rXNS8nqmR6vBNBzWqXcG</p>
                   </div>
                   <div class="card-action">
                     <img src="https://wallet.erdem.in/neo.png" alt="">
@@ -103,22 +111,7 @@
               </div>
             </div>
           </div>
-
-          <div id="stx" class="col s12">
-            <div class="row">
-              <div class="col s12 m12">
-                <div class="card no-shadows">
-                  <div class="card-content">
-                    <span class="card-title">Stellar wallet adress</span>
-                    <p>GDKNGBON6GB2Z7ACZ4ELTNJXRIB7OUXS6VJOQRWWNHSHBJUYSROF3SVM</p>
-                  </div>
-                  <div class="card-action">
-                    <img src="https://wallet.erdem.in/stx.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+		  
         </div>
       </div>
     </div>
